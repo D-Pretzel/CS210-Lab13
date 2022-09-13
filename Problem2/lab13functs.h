@@ -7,3 +7,10 @@
  *          could be multiple lines
  * =========================================================== */
 
+#include <stdio.h>
+#include <math.h>
+
+#define IS_NOT_ARMSTRONG 0
+#define IS_ARMSTRONG 1
+
+int isArmstrong(int num);

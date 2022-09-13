@@ -7,3 +7,6 @@
  *          could be multiple lines
  * =========================================================== */
 
+#include <stdio.h>
+
+void printRange(int start, int final);

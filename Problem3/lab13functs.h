@@ -7,3 +7,8 @@
  *          could be multiple lines
  * =========================================================== */
 
+#include <stdio.h>
+#include <math.h>
+
+// Finds the greatest common denominator of two integers
+int findGCD(int num1, int num2);

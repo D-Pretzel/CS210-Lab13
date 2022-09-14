@@ -10,25 +10,24 @@
 #include "lab13functs.h"
 
 int isArmstrong(int num){
-    int numDigit, sumDigit = 0;
+    int oNum, r, n = 0;
+    float result = 0.0;
 
-    // Finds the sum and number of digits
-    int i = 0;
-    while (num > 0) {
-        i = num % 10;
-        sumDigit += i;
-        num /= 10;
-        numDigit++;
+    oNum = num; //Keeps num "safe"
+
+    // Stores the number of digits in num
+    for (oNum = num; oNum != 0; ++n) {
+        oNum /= 10; //Divides by 10 until nubmer is 0
     }
 
-    switch (numDigit) {
-        case 3:
-            if (sumDigit == ())
-        case 2:
-        default:
-            printf("Not a valid number!\n");
-            return 2;
-            break;
+    for (oNum = num; oNum != 0; oNum /= 10) {
+        r = oNum % 10;
+        result += pow(r, n);
     }
 
+    if ((int)result == num) {
+        return IS_ARMSTRONG;
+    } else {
+        return IS_NOT_ARMSTRONG;
+    }
 }
